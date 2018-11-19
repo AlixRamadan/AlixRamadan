@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<script>
+var operation;
+function numberOne (){ 
+displayBox2.value = displayBox2.value+"1"; 
+} 
+function numbertwo (){ 
+displayBox2.value = displayBox2.value+"2"; 
+} 
+function numberthree (){ 
+displayBox2.value = displayBox2.value+"3"; 
+} 
+function numberfour (){ 
+displayBox2.value = displayBox2.value+"4"; 
+} 
+function numberfive (){ 
+displayBox2.value = displayBox2.value+"5"; 
+} 
+function numbersix (){ 
+displayBox2.value = displayBox2.value+"6"; 
+} 
+function numberseven (){ 
+displayBox2.value = displayBox2.value+"7"; 
+} 
+function numbereight (){ 
+displayBox2.value = displayBox2.value+"8"; 
+} 
+function numbernine (){ 
+displayBox2.value = displayBox2.value+"9"; 
+} 
+function numberzero (){ 
+displayBox2.value = displayBox2.value+"0"; 
+ } 
+function addition(){        
+	operation = "+";    
+	firstNumber = parseInt(displayBox2.value) ; 
+	displayBox2.value="0";
+	displayBox1.value = firstNumber + operation ;     
+}  
+function substraction(){        
+	operation = "-";    
+	firstNumber = parseInt(displayBox2.value);    
+	displayBox2.value = "0";    
+	displayBox1.value = firstNumber + operation;        
+} 
+function division(){        
+	operation = "/";    
+	firstNumber = parseInt(displayBox2.value);    
+	displayBox2.value = "0";    
+	displayBox1.value = firstNumber + operation;        
+}
+function multiplication(){        
+	operation = "*";    
+	firstNumber = parseInt(displayBox2.value);    
+	displayBox2.value = "0";    
+	displayBox1.value = firstNumber + operation;        
+}
+
+function pow(){
+operation="^"
+firstNumber = parseInt(displayBox2.value);    
+	displayBox2.value = "0";    
+	displayBox1.value = firstNumber + operation;
+	}
+function sqrt(){
+operation="^0.5"
+firstNumber = parseInt(displayBox2.value);    
+	displayBox2.value = "0";    
+	displayBox1.value = firstNumber + operation;
+	}
+function result() {    
+	firstNumber =parseInt(displayBox1.value); 
+	secondNumber=parseInt(displayBox2.value);	
+	if (operation=='*') { displayBox2.value=firstNumber*secondNumber;}
+	if (operation=='/') { displayBox2.value=firstNumber/secondNumber;}
+	if (operation=='-') { displayBox2.value=firstNumber-secondNumber;}
+	if (operation=='+') { displayBox2.value=firstNumber+secondNumber;}
+	if (operation=="^") {displayBox2.value=Math.pow(firstNumber,secondNumber);}
+	if (operation=="^0.5") {displayBox2.value=Math.sqrt(firstNumber);}
+}
+function clearInput() {
+	displayBox1.value=" "; 
+	displayBox2.value=" ";
+}																																
+ </script>
+</HEAD>
+<BODY style='background-color:yellow' >
+<h2> NAME : ALI RAMADAN</h2>
+<h2>ID : 201800191</h2>
+
+<p>DESCRIPTION : I'M 18 YEARS OLD ,FIRST YEAR CIVIL ENGINEERING
+                 AT LAU , LOVE PHYSICS AND SPORTS </p>
+<h3>PUBLISHED UNDER COPYRIGHTS!</h3>
+<p style='color:red'>!!!! THIS CALCULATOR WORKS UNDER ANY BROWSER OTHER THAN INTERNET EXPLORER !!!!!</p>             	 
+
+<h2>BONUS POINTS ACCOMPLISHED:</h2>
+<pre><img src='1432.jpg' alt='done!' height='20' weidht='20'>  Adding icon images for the calculator buttons.  
+<img src='1432.jpg' alt='done!' height='20' weidht='20'>  Arranging the buttons of the calculator in a table structure. 
+<img src='1432.jpg' alt='done!' height='20' weidht='20'>  Adding additional functions to the calculator (such as square root and exponent).  
+<img src='1432.jpg' alt='done!' height='20' weidht='20'>  Extending the calculator functionality to cover 2-digit operations.  
+<img src='1432.jpg' alt='done!' height='20' weidht='20'>  Publishing the webpage online.</pre>
+<IMG SRC="ME.jpg" alt="something went wrong!" width='400' height='400' >
+ 
+ <center><H1>MY CALCULATOR</H1>
+ 
+ <input id="displayBox1" name="result box 1" type="text" value="" /><br>
+ <input id="displayBox2" name="result box 2" type="text" value="0" /> 
+ 
+ <br><br> 
+ <button id="num1" onclick="numberOne();" style='color:blue'> 1 </button> 
+ <button id="num2" onclick="numbertwo();" style='color:blue'> 2 </button> 
+ <button id="num3" onclick="numberthree();" style='color:blue'> 3 </button>
+ <button id="num10" onclick="addition();" style='color:purple'> <img src='+ sign.jpg' alt='something went wrong!'  height='10' width='10'></button>
+ <br><br>
+ <button id="num4" onclick="numberfour();" style='color:blue'> 4 </button> 
+ <button id="num5" onclick="numberfive();" style='color:blue'> 5 </button> 
+ <button id="num6" onclick="numbersix();" style='color:blue'> 6 </button>
+ <button id="num11" onclick="substraction();" style='color:purple'> <img src='- sign.jpg' alt='something went wrong!'  height='10' width='10'> </button>
+ <br><br>
+ <button id="num7" onclick="numberseven();" style='color:blue'> 7 </button> 
+ <button id="num8" onclick="numbereight();" style='color:blue'> 8 </button> 
+ <button id="num9" onclick="numbernine();" style='color:blue'> 9 </button> 
+ <button id="num12" onclick="multiplication();" style='color:purple'> <img src='x sign.jpg' alt='something went wrong!'  height='10' width='10'> </button>
+ <br><br>  
+ <button id="num0" onclick="numberzero();"> 0 </button>
+ <button id="num15" onclick="clearInput()" style='color:red'> C </button> 
+ <button id="num14" onclick="result();"> = </button> 
+ <button id="num13" onclick="division();" style='color:purple'> <img src='divd sign.jpg' alt='something went wrong!'  height='10' width='10'> </button> 
+ <br><br>
+ <button id="num16" onclick="sqrt();"> <img src='squarerroot.jpg' alt='something went wrong!'  height='20' width='20'> </button>
+ <button id="num17" onclick="pow();" > <img src='pow122.jpg' alt='somethigng went wrong' height='20' width='20' ></button></center>
